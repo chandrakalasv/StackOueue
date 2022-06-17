@@ -10,6 +10,17 @@ public class QueueImplementation<T> implements IQueue<T> {
     }
 
     @Override
+    public void dequeue() {
+        while(list.size() > 0) {
+            peak();
+            list.pop();
+        }
+    }
+    void peak(){
+        System.out.println(list.top.data);
+    }
+
+    @Override
     public String toString() {
         return "QueueImplementation{" + list +
                 '}';
