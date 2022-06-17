@@ -16,10 +16,15 @@ public class LinkedList<T> {
         top = newNode;
     }
 
+    public int pop() {
+        Node temp = top;
+        top = temp.next;
+        return (int) temp.data;
+    }
+
     @Override
     public String toString() {
-        return "LinkedList{" +
-                "top=" + top +
+        return "top=" + top +
                 '}';
     }
 }

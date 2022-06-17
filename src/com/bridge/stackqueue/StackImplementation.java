@@ -9,9 +9,18 @@ public class StackImplementation <T> implements IStack<T> {
     }
 
     @Override
+    public int pop() {
+       return  list.pop();
+    }
+
+    @Override
+    public int peak() {
+        return (int) list.top.data;
+    }
+
+    @Override
     public String toString() {
-        return "StackImplementation{" +
-                "list=" + list +
+        return "StackImplementation{" + list +
                 '}';
     }
 }

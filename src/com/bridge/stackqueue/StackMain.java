@@ -8,5 +8,14 @@ public class StackMain {
         stack.push(30);
         stack.push(56);
         System.out.println(stack);
+        System.out.println(stack.peak());
+        stack.pop();
+        System.out.println(stack);
+        System.out.println(stack.peak());
+        stack.pop();
+        System.out.println(stack);
+        System.out.println(stack.peak());
+        stack.pop();
+        System.out.println(stack);
     }
 }
