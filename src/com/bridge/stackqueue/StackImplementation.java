@@ -9,15 +9,15 @@ public class StackImplementation <T> implements IStack<T> {
     }
 
     @Override
-    public int pop() {
-       return  list.pop();
+    public void pop() {
+        while(list.size() > 0) {
+            peak();
+            list.pop();
+        }
     }
-
-    @Override
-    public int peak() {
-        return (int) list.top.data;
+    void peak(){
+        System.out.println(list.top.data);
     }
-
     @Override
     public String toString() {
         return "StackImplementation{" + list +

@@ -22,6 +22,17 @@ public class LinkedList<T> {
         return (int) temp.data;
     }
 
+    public int size() {
+      Node temp=top;
+        int count = 0;
+        while(temp!=null)
+        {
+            temp=temp.next;
+            count++;
+        }
+        return count;
+    }
+
     @Override
     public String toString() {
         return "top=" + top +
