@@ -7,6 +7,7 @@ public class LinkedList<T> {
         Node newNode = new Node(data);
         if (top == null) {
             top = newNode;
+            return;
         }
         while (newNode.next != null) {
             newNode = newNode.next;
